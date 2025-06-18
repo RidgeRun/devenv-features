@@ -1,0 +1,18 @@
+{
+    "id": "meson",
+    "version": "0.1.0",
+    "name": "Meson Build System",
+    "description": "Add the Meson build system (via pipx)",
+    "options": {
+        "mesonVersion": {
+            "type": "string",
+            "description": "The meson version to install (leave empty to install the latest available)",
+            "default": ""
+        },
+        "mesonPath": {
+            "type": "string",
+            "description": "The path where to install meson. This feature will NOT add the new path to PATH.",
+            "default": "/usr/local/bin/"
+        }
+    }
+}
