@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "name": "GStreamer",
     "description": "Add a GStreamer build to a devcontainer",
+    "dependsOn": {
+        "localhost:12345/ridgerun/devenv-features/meson:0.1.0": {}
+    },
     "options": {
         "gstVersion": {
             "type": "string",

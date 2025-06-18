@@ -2,7 +2,7 @@
 
 function check_option() {
     var="$1"
-    opt_ame="$2"
+    opt_name="$2"
 
     if [ -z $var ]; then
         echo "Please pass the \"${opt_name}\" option to the \"gstreamer\" feature" >&2
@@ -43,8 +43,7 @@ apt install --yes \
   bash-completion \
   python3-gi \
   gobject-introspection \
-  libgirepository1.0-dev \
-  pipx
+  libgirepository1.0-dev
 
 mkdir -p /usr/local/src
 cd /usr/local/src
@@ -55,7 +54,7 @@ git clone $GST_REPO_URL \
   $GSTVERSION
 
 cd gstreamer
-pipx run meson setup builddir \
+meson setup builddir \
   --buildtype $BUILDTYPE \
   -Dnls=disabled \
   -Dexamples=`boolean_to_feature $EXAMPLES` \
@@ -68,8 +67,8 @@ pipx run meson setup builddir \
   -Dgstreamer:bash-completion=enabled \
   $EXTRAARGS
 
-pipx run meson compile -C builddir
-pipx run meson install -C builddir
+meson compile -C builddir
+meson install -C builddir
 
 # Can't use containerEnv here because we are dynamically probing the architecture
 GST_PROFILE=/etc/profile.d/gstreamer_runtime_paths.sh
