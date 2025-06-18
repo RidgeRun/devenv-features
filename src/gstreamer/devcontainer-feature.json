@@ -1,0 +1,50 @@
+{
+    "id": "gstreamer",
+    "version": "0.1.0",
+    "name": "GStreamer",
+    "description": "Add a GStreamer build to a devcontainer",
+    "dependsOn": {
+        "localhost:12345/ridgerun/devenv-features/meson:0.1.0": {}
+    },
+    "options": {
+        "gstVersion": {
+            "type": "string",
+            "description": "The GStreamer version to build"
+        },
+        "buildType": {
+            "type": "string",
+            "description": "The type of build to perform",
+            "enum": ["plain, debug, debugoptimized, release, minsize"],
+            "default": "debug"
+        },
+        "tests": {
+            "type": "boolean",
+            "description": "Whether to build the tests or not",
+            "default": false
+        },
+        "examples": {
+            "type": "boolean",
+            "description": "Whether to build the examples or not",
+            "default": false
+        },
+        "docs": {
+            "type": "boolean",
+            "description": "Whether to build the docs or not",
+            "default": false
+        },
+        "gpl": {
+            "type": "boolean",
+            "description": "Whether to build GPL licenced projects or not",
+            "default": true
+        },
+        "introspection": {
+            "type": "boolean",
+            "description": "Whether to build GIR introspection libs or not",
+            "default": true
+        },
+        "extraArgs": {
+            "type": "string",
+            "description": "Any additional meson args to pass to the configuration step"
+        }
+    }
+}
