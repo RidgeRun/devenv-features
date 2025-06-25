@@ -1,0 +1,80 @@
+{
+    "id": "cuda-toolkit",
+    "version": "0.1.0",
+    "name": "CUDA Toolkit",
+    "description": "Add CUDA and CUDA toolkit to a devcontainer (via apt)",
+    "options": {
+        "cudaVersion": {
+            "type": "string",
+            "description": "The CUDA version to install (like 12.9)"
+        },
+        "architecture": {
+            "type": "string",
+            "description": "The platform architecture to use",
+            "enum": ["x86_64", "sbsa", "arm64"]
+        },
+        "ubuntuVersion": {
+            "type": "string",
+            "description": "The Ubuntu version to use",
+            "enum": ["22.04", "24.04"]
+        },
+        "installCudnn": {
+            "type": "boolean",
+            "default": true,
+            "description": "Additionally install CUDA Deep Neural Network (cuDNN) shared library"
+        },
+        "installCudnnDev": {
+            "type": "boolean",
+            "default": false,
+            "description": "Additionally install CUDA Deep Neural Network (cuDNN) development libraries and headers"
+        },
+        "installNvtx": {
+            "type": "boolean",
+            "default": false,
+            "description": "Additionally install NVIDIA Tools Extension (NVTX)"
+        },
+        "installToolkit": {
+            "type": "boolean",
+            "default": true,
+            "description": "Additionally install NVIDIA CUDA Toolkit"
+        },
+        "cudnnVersion": {
+            "type": "string",
+            "proposals": [
+                "automatic",
+                "8.9.5.29",
+                "8.9.4.25",
+                "8.9.3.28",
+                "8.9.2.26",
+                "8.9.1.23",
+                "8.9.0.131",
+                "8.8.1.3",
+                "8.8.0.121",
+                "8.7.0.84",
+                "8.6.0.163",
+                "8.5.0.96",
+                "8.4.1.50",
+                "8.4.0.27",
+                "8.3.3.40",
+                "8.3.2.44",
+                "8.3.1.22",
+                "8.3.0.98",
+                "8.2.4.15",
+                "8.2.2.26",
+                "8.2.1.32",
+                "8.2.0.53",
+                "8.1.1.33",
+                "8.1.0.77",
+                "9.0.0.312",
+                "9.1.0.70",
+                "9.1.1.17",
+                "9.2.0.82",
+                "9.2.1.18",
+                "9.3.0.75",
+                "9.4.0.58"
+            ],
+            "default": "automatic",
+            "description": "Version of cuDNN to install"
+        }
+    }
+}
