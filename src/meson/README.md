@@ -22,4 +22,4 @@ Add the Meson build system (via pipx)
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ridgerun/devenv-features/blob/main/src//meson/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ridgerun/devenv-features/blob/main/src/meson/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
