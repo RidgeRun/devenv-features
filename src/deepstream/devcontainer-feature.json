@@ -1,0 +1,35 @@
+{
+    "id": "deepstream",
+    "version": "0.1.0",
+    "name": "NVIDIA DeepStream",
+    "description": "Add NVIDIA DeepStream to a devcontainer, built from source",
+    "dependsOn": {
+        "./gstreamer": {
+            "gstVersion": "1.24"
+        }
+    },
+    "options": {
+        "dsVersion" : {
+            "type": "string",
+            "enum": [
+                "7.1",
+                "7.0",
+                "6.4",
+                "6.3"
+            ],
+            "default": "7.1"
+        },
+        "platform" : {
+            "type": "string",
+            "enum": [
+                "x86_64",
+                "jetson"
+            ],
+            "default": "x86_64"
+        },
+        "cudaVersion" : {
+            "type": "string",
+            "default": "12.8"
+        }
+    }
+}
