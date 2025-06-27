@@ -16,7 +16,6 @@ Add the Meson build system (via pip)
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | mesonVersion | The meson version to install (leave empty to install the latest available) | string | - |
-| mesonPath | The path where to install meson. This feature will NOT add the new path to PATH. | string | /usr/local/bin/ |
 
 
 
