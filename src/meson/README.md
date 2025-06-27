@@ -1,7 +1,7 @@
 
 # Meson Build System (meson)
 
-Add the Meson build system (via pipx)
+Add the Meson build system (via pip)
 
 ## Example Usage
 
