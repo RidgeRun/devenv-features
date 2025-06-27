@@ -1,0 +1,25 @@
+{
+    "id": "glib",
+    "version": "0.1.0",
+    "name": "GLib",
+    "description": "Add a GLib build to a devcontainer",
+    "dependsOn": {
+        "ghcr.io/ridgerun/devenv-features/meson:0.1.0": {}
+    },
+    "options": {
+        "glibVersion": {
+            "type": "string",
+            "description": "The GLib version to build"
+        },
+        "buildType": {
+            "type": "string",
+            "description": "The type of build to perform",
+            "enum": ["plain, debug, debugoptimized, release, minsize"],
+            "default": "debug"
+        },
+        "extraArgs": {
+            "type": "string",
+            "description": "Any additional meson args to pass to the configuration step"
+        }
+    }
+}
