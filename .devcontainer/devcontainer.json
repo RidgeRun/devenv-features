@@ -17,6 +17,12 @@
             "options": ["readonly"]
         },
         {
+            "source": "${localEnv:HOME}/.gitconfig",
+            "target": "/home/${localEnv:USER}/.gitconfig",
+            "type": "bind",
+            "options": ["readonly"]
+        },
+        {
             "source": "${localEnv:HOME}/.cache",
             "target": "/home/${localEnv:USER}/.cache",
             "type": "bind",
