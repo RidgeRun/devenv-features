@@ -36,13 +36,13 @@
         },
         {
             "source": "${localEnv:SSH_AUTH_SOCK}",
-            "target": "/run/host-services/ssh-auth.sock",
+            "target": "/ssh-auth.sock",
             "type": "bind",
             "options": []
         }
     ],
     "remoteEnv": {
-        "SSH_AUTH_SOCK": "/run/host-services/ssh-auth.sock",
+        "SSH_AUTH_SOCK": "/ssh-auth.sock",
         "XDG_CONFIG_HOME": "/home/${localEnv:USER}/.config",
         "XDG_CACHE_HOME": "/home/${localEnv:USER}/.cache"
     }
