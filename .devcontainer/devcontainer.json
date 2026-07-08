@@ -35,7 +35,7 @@
             "options": ["readonly"]
         },
         {
-            "source": "/run/host-services/ssh-auth.sock",
+            "source": "${localEnv:SSH_AUTH_SOCK}",
             "target": "/run/host-services/ssh-auth.sock",
             "type": "bind",
             "options": []
