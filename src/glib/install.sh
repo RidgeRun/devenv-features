@@ -7,7 +7,7 @@ function check_option() {
     opt_name="$2"
 
     if [ -z "$var" ]; then
-        echo "Please pass the \"${opt_name}\" option to the \"gstreamer\" feature" >&2
+        echo "Please pass the \"${opt_name}\" option to the \"glib\" feature" >&2
         exit 1
     fi
 }
