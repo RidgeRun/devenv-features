@@ -4,7 +4,7 @@
     "name": "GStreamer",
     "description": "Add a GStreamer build to a devcontainer",
     "dependsOn": {
-        "ghcr.io/ridgerun/devenv-features/meson:0.1.0": {}
+        "ghcr.io/ridgerun/devenv-features/meson:0.1.0": {},
         "ghcr.io/ridgerun/devenv-features/glib:0.1.0": {
             "glibVersion": "2.80.4"
         }
