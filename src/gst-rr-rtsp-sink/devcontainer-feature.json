@@ -4,7 +4,7 @@
     "name": "GstRrRtspSink",
     "description": "Add GstRrRtspSink to a devcontainer",
     "installsAfter": [
-        "./src/gstreamer"
+        "ghcr.io/ridgerun/devcontainer-features/gstreamer"
     ],
     "postCreateCommand": [
         "/usr/local/bin/build-gst-rr-rtsp-sink"

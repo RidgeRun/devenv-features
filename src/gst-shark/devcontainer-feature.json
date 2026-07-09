@@ -4,7 +4,7 @@
     "name": "gst-shark",
     "description": "Add the RidgeRun gst-shark tracers to a devcontainer",
     "installsAfter": [
-        "./src/gstreamer"
+        "ghcr.io/ridgerun/devcontainer-features/gstreamer"
     ],
     "options": {
         "buildType": {

@@ -4,9 +4,9 @@
     "name": "RidgeRun OSS",
     "description": "Bundle the RidgeRun open source features",
     "dependsOn": {
-        "./src/gst-perf": {},
-        "./src/gst-shark": {},
-        "./src/gst-interpipe": {},
-        "./src/gstd": {}
+        "ghcr.io/ridgerun/devcontainer-features/gst-perf": {},
+        "ghcr.io/ridgerun/devcontainer-features/gst-shark": {},
+        "ghcr.io/ridgerun/devcontainer-features/gst-interpipe": {},
+        "ghcr.io/ridgerun/devcontainer-features/gstd": {}
     }
 }

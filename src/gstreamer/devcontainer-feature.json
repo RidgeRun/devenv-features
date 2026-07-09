@@ -4,7 +4,7 @@
     "name": "GStreamer",
     "description": "Add a GStreamer build to a devcontainer",
     "dependsOn": {
-        "./src/meson": {}
+        "ghcr.io/ridgerun/devcontainer-features/meson": {}
     },
     "options": {
         "gstVersion": {

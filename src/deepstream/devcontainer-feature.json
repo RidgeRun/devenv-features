@@ -4,7 +4,7 @@
     "name": "NVIDIA DeepStream",
     "description": "Add NVIDIA DeepStream to a devcontainer, built from source",
     "installsAfter": [
-        "./src/gstreamer"
+        "ghcr.io/ridgerun/devcontainer-features/gstreamer"
     ],
     "options": {
         "dsVersion" : {
