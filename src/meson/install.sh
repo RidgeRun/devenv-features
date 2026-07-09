@@ -18,4 +18,4 @@ else
     PKG="meson==$MESONVERSION"
 fi
 
-pip install $PKG
+python3 -m pip install --break-system-packages $PKG
