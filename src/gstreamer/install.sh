@@ -23,6 +23,7 @@ function boolean_to_feature() {
 }
 
 check_option "$GSTVERSION" "gstVersion"
+check_option "$BUILDGLIB" "buildGlib"
 check_option "$BUILDTYPE" "buildType"
 check_option "$TESTS" "tests"
 check_option "$DOCS" "docs"
@@ -57,6 +58,11 @@ git clone $GST_REPO_URL \
   $GSTVERSION
 
 cd gstreamer
+FALLBACK_ARGS=""
+if [ "$BUILDGLIB" = "true" ]; then
+  FALLBACK_ARGS="--force-fallback-for=glib"
+fi
+
 meson setup builddir \
   --prefix=/usr \
   --buildtype="$BUILDTYPE" \
@@ -69,6 +75,7 @@ meson setup builddir \
   -Dgstreamer:libunwind=enabled \
   -Dgstreamer:libdw=enabled \
   -Dgstreamer:bash-completion=enabled \
+  $FALLBACK_ARGS \
   $EXTRAARGS
 
 meson compile -C builddir
