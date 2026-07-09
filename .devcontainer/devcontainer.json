@@ -11,12 +11,8 @@
         "./src/gstreamer": {
             "gstVersion": "1.26"
         },
-        "./src/gst-perf": {},
-        "./src/gst-shark": {},
-        "./src/gstd": {},
-        "./src/gst-interpipe": {},
-        "./src/gst-rr-rtsp-sink": {},
-        "./src/gst-rr-browser-sink": {}
+        "./src/ridgerun-oss": {},
+        "./src/ridgerun-proprietary": {}
     },
     "mounts": [
         {

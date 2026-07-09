@@ -1,0 +1,10 @@
+{
+    "id": "ridgerun-proprietary",
+    "version": "0.1.0",
+    "name": "RidgeRun Proprietary",
+    "description": "Bundle the RidgeRun proprietary features",
+    "dependsOn": {
+        "./src/gst-rr-rtsp-sink": {},
+        "./src/gst-rr-browser-sink": {}
+    }
+}
