@@ -7,7 +7,7 @@ Add a GStreamer build to a devcontainer
 
 ```json
 "features": {
-    "ghcr.io/ridgerun/devenv-features/gstreamer:0": {}
+    "ghcr.io/ridgerun/devcontainer-features/gstreamer:0": {}
 }
 ```
 
@@ -28,4 +28,4 @@ Add a GStreamer build to a devcontainer
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ridgerun/devenv-features/blob/main/src/gstreamer/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ridgerun/devcontainer-features/blob/main/src/gstreamer/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
