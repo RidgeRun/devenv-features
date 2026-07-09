@@ -42,6 +42,7 @@ apt install -yq \
   libunwind-dev \
   libdw-dev \
   libpython3-dev \
+  libxml2-dev \
   bash-completion \
   python3-gi \
   gobject-introspection \
