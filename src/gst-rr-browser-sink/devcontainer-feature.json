@@ -1,0 +1,36 @@
+{
+    "id": "gst-rr-browser-sink",
+    "version": "0.1.0",
+    "name": "GstRrBrowserSink",
+    "description": "Add GstRrBrowserSink to a devcontainer",
+    "dependsOn": {
+        "./src/gstreamer": {
+            "gstVersion": "1.26"
+        }
+    },
+    "postCreateCommand": [
+        "/usr/local/bin/build-gst-rr-browser-sink"
+    ],
+    "options": {
+        "repoUrl": {
+            "type": "string",
+            "description": "The git repository URL to build",
+            "default": "git@gitlab.ridgerun.com:spectrum/gst-rr-browser-sink.git"
+        },
+        "buildType": {
+            "type": "string",
+            "description": "The type of build to perform",
+            "enum": ["plain", "debug", "debugoptimized", "release", "minsize"],
+            "default": "debug"
+        },
+        "version": {
+            "type": "string",
+            "default": "main",
+            "description": "The GstRrBrowserSink version or git ref to build"
+        },
+        "extraArgs": {
+            "type": "string",
+            "description": "Any additional meson args to pass to the configuration step"
+        }
+    }
+}
