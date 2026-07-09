@@ -3,14 +3,19 @@
     "version": "0.1.0",
     "name": "GstInterpipe",
     "description": "Add GstInterpipe to a devcontainer",
-    "dependsOn": {
-        "./src/gstreamer": {
-            "gstVersion": "1.26"
-        }
-    },
+    "installsAfter": [
+        "./src/gstreamer"
+    ],
     "options": {
+        "buildType": {
+            "type": "string",
+            "description": "The type of build to perform",
+            "enum": ["plain", "debug", "debugoptimized", "release", "minsize"],
+            "default": "debug"
+        },
         "version": {
             "type": "string",
+            "default": "master",
             "description": "The GstInterpipe version or git ref to build"
         },
         "extraArgs": {

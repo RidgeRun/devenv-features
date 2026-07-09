@@ -3,9 +3,19 @@
     "version": "0.1.0",
     "name": "gst-perf",
     "description": "Add the RidgeRun gst-perf plugin to a devcontainer",
+    "installsAfter": [
+        "./src/gstreamer"
+    ],
     "options": {
+        "buildType": {
+            "type": "string",
+            "description": "The type of build to perform",
+            "enum": ["plain", "debug", "debugoptimized", "release", "minsize"],
+            "default": "debug"
+        },
         "version": {
             "type": "string",
+            "default": "master",
             "description": "The gst-perf version or git ref to build"
         },
         "configureArgs": {

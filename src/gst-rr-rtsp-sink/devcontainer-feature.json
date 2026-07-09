@@ -3,11 +3,9 @@
     "version": "0.1.0",
     "name": "GstRrRtspSink",
     "description": "Add GstRrRtspSink to a devcontainer",
-    "dependsOn": {
-        "./src/gstreamer": {
-            "gstVersion": "1.26"
-        }
-    },
+    "installsAfter": [
+        "./src/gstreamer"
+    ],
     "postCreateCommand": [
         "/usr/local/bin/build-gst-rr-rtsp-sink"
     ],

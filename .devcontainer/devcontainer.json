@@ -7,7 +7,16 @@
         "./local-features/fixes": {},
         "ghcr.io/devcontainers/features/common-utils:2": {},
         "ghcr.io/devcontainers/features/docker-in-docker:4": {},
-        "ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {}
+        "ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {},
+        "./src/gstreamer": {
+            "gstVersion": "1.26"
+        },
+        "./src/gst-perf": {},
+        "./src/gst-shark": {},
+        "./src/gstd": {},
+        "./src/gst-interpipe": {},
+        "./src/gst-rr-rtsp-sink": {},
+        "./src/gst-rr-browser-sink": {}
     },
     "mounts": [
         {

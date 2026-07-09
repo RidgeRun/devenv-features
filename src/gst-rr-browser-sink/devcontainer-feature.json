@@ -3,11 +3,9 @@
     "version": "0.1.0",
     "name": "GstRrBrowserSink",
     "description": "Add GstRrBrowserSink to a devcontainer",
-    "dependsOn": {
-        "./src/gstreamer": {
-            "gstVersion": "1.26"
-        }
-    },
+    "installsAfter": [
+        "./src/gstreamer"
+    ],
     "postCreateCommand": [
         "/usr/local/bin/build-gst-rr-browser-sink"
     ],

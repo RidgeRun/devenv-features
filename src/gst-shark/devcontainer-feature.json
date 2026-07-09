@@ -3,11 +3,9 @@
     "version": "0.1.0",
     "name": "gst-shark",
     "description": "Add the RidgeRun gst-shark tracers to a devcontainer",
-    "dependsOn": {
-        "./src/gstreamer": {
-            "gstVersion": "1.26"
-        }
-    },
+    "installsAfter": [
+        "./src/gstreamer"
+    ],
     "options": {
         "buildType": {
             "type": "string",
@@ -17,6 +15,7 @@
         },
         "version": {
             "type": "string",
+            "default": "master",
             "description": "The gst-shark version or git ref to build"
         },
         "extraArgs": {
