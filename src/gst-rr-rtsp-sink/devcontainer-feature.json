@@ -1,0 +1,36 @@
+{
+    "id": "gst-rr-rtsp-sink",
+    "version": "0.1.0",
+    "name": "GstRrRtspSink",
+    "description": "Add GstRrRtspSink to a devcontainer",
+    "dependsOn": {
+        "./src/gstreamer": {
+            "gstVersion": "1.26"
+        }
+    },
+    "postCreateCommand": [
+        "/usr/local/bin/build-gst-rr-rtsp-sink"
+    ],
+    "options": {
+        "repoUrl": {
+            "type": "string",
+            "description": "The git repository URL to build",
+            "default": "git@gitlab.ridgerun.com:ridgerun/rnd/github-projects/gst-rtsp-sink"
+        },
+        "buildType": {
+            "type": "string",
+            "description": "The type of build to perform",
+            "enum": ["plain", "debug", "debugoptimized", "release", "minsize"],
+            "default": "debug"
+        },
+        "version": {
+            "type": "string",
+            "default": "master",
+            "description": "The GstRrRtspSink version or git ref to build"
+        },
+        "extraArgs": {
+            "type": "string",
+            "description": "Any additional meson args to pass to the configuration step"
+        }
+    }
+}
