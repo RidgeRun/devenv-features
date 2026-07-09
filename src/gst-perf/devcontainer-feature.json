@@ -1,0 +1,16 @@
+{
+    "id": "gst-perf",
+    "version": "0.1.0",
+    "name": "gst-perf",
+    "description": "Add the RidgeRun gst-perf plugin to a devcontainer",
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "The gst-perf version or git ref to build"
+        },
+        "configureArgs": {
+            "type": "string",
+            "description": "Additional arguments to pass to ./configure"
+        }
+    }
+}
