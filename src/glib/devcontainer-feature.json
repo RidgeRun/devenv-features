@@ -14,7 +14,7 @@
         "buildType": {
             "type": "string",
             "description": "The type of build to perform",
-            "enum": ["plain, debug, debugoptimized, release, minsize"],
+            "enum": ["plain", "debug", "debugoptimized", "release", "minsize"],
             "default": "debug"
         },
         "extraArgs": {
