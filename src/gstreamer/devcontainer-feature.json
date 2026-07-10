@@ -4,20 +4,22 @@
     "name": "GStreamer",
     "description": "Add a GStreamer build to a devcontainer",
     "dependsOn": {
-        "ghcr.io/ridgerun/devenv-features/meson:0.1.0": {}
-        "ghcr.io/ridgerun/devenv-features/glib:0.1.0": {
-            "glibVersion": "2.80.4"
-        }
+        "ghcr.io/ridgerun/devcontainer-features/meson:0": {}
     },
     "options": {
         "gstVersion": {
             "type": "string",
             "description": "The GStreamer version to build"
         },
+        "buildGlib": {
+            "type": "boolean",
+            "description": "Whether to build GLib from fallback sources",
+            "default": true
+        },
         "buildType": {
             "type": "string",
             "description": "The type of build to perform",
-            "enum": ["plain, debug, debugoptimized, release, minsize"],
+            "enum": ["plain", "debug", "debugoptimized", "release", "minsize"],
             "default": "debug"
         },
         "tests": {

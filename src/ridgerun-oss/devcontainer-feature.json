@@ -1,0 +1,12 @@
+{
+    "id": "ridgerun-oss",
+    "version": "0.1.0",
+    "name": "RidgeRun OSS",
+    "description": "Bundle the RidgeRun open source features",
+    "dependsOn": {
+        "ghcr.io/ridgerun/devcontainer-features/gst-perf:0": {},
+        "ghcr.io/ridgerun/devcontainer-features/gst-shark:0": {},
+        "ghcr.io/ridgerun/devcontainer-features/gst-interpipe:0": {},
+        "ghcr.io/ridgerun/devcontainer-features/gstd:0": {}
+    }
+}

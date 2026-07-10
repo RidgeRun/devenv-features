@@ -7,7 +7,7 @@ Add NVIDIA DeepStream to a devcontainer, built from source
 
 ```json
 "features": {
-    "ghcr.io/ridgerun/devenv-features/deepstream:0": {}
+    "ghcr.io/ridgerun/devcontainer-features/deepstream:0": {}
 }
 ```
 
@@ -52,4 +52,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ridgerun/devenv-features/blob/main/src/deepstream/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ridgerun/devcontainer-features/blob/main/src/deepstream/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

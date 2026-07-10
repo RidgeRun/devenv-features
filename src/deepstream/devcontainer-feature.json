@@ -3,11 +3,9 @@
     "version": "0.1.0",
     "name": "NVIDIA DeepStream",
     "description": "Add NVIDIA DeepStream to a devcontainer, built from source",
-    "dependsOn": {
-        "ghcr.io/ridgerun/devenv-features/gstreamer:0.1.0": {
-            "gstVersion": "1.24"
-        }
-    },
+    "installsAfter": [
+        "ghcr.io/ridgerun/devcontainer-features/gstreamer:0"
+    ],
     "options": {
         "dsVersion" : {
             "type": "string",
