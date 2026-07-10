@@ -4,7 +4,7 @@
     "name": "GStreamer Daemon",
     "description": "Add GStreamer Daemon (gstd) to a devcontainer",
     "installsAfter": [
-        "ghcr.io/ridgerun/devcontainer-features/gstreamer"
+        "ghcr.io/ridgerun/devcontainer-features/gstreamer:0"
     ],
     "options": {
         "buildType": {

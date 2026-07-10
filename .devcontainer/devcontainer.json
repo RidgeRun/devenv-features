@@ -8,11 +8,11 @@
         "ghcr.io/devcontainers/features/common-utils:2": {},
         "ghcr.io/devcontainers/features/docker-in-docker:4": {},
         "ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {},
-        "ghcr.io/ridgerun/devcontainer-features/gstreamer": {
+        "ghcr.io/ridgerun/devcontainer-features/gstreamer:0": {
             "gstVersion": "1.26"
         },
-        "ghcr.io/ridgerun/devcontainer-features/ridgerun-oss": {},
-        "ghcr.io/ridgerun/devcontainer-features/ridgerun-proprietary": {}
+        "ghcr.io/ridgerun/devcontainer-features/ridgerun-oss:0": {},
+        "ghcr.io/ridgerun/devcontainer-features/ridgerun-proprietary:0": {}
     },
     "mounts": [
         {

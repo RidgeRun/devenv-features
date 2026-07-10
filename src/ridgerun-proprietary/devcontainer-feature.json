@@ -4,7 +4,7 @@
     "name": "RidgeRun Proprietary",
     "description": "Bundle the RidgeRun proprietary features",
     "dependsOn": {
-        "ghcr.io/ridgerun/devcontainer-features/gst-rr-rtsp-sink": {},
-        "ghcr.io/ridgerun/devcontainer-features/gst-rr-browser-sink": {}
+        "ghcr.io/ridgerun/devcontainer-features/gst-rr-rtsp-sink:0": {},
+        "ghcr.io/ridgerun/devcontainer-features/gst-rr-browser-sink:0": {}
     }
 }

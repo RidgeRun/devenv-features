@@ -4,7 +4,7 @@
     "name": "GLib",
     "description": "Add a GLib build to a devcontainer",
     "dependsOn": {
-        "ghcr.io/ridgerun/devcontainer-features/meson": {}
+        "ghcr.io/ridgerun/devcontainer-features/meson:0": {}
     },
     "options": {
         "glibVersion": {
