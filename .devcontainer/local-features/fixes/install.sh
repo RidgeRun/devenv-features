@@ -5,4 +5,5 @@ set -e
 apt update -yq
 DEBIAN_FRONTEND=noninteractive \
 apt install -yq \
-  libatomic1
+  libatomic1 \
+  just
