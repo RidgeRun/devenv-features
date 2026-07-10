@@ -2,7 +2,7 @@ publish:
     devcontainer features publish src --registry ghcr.io --namespace ridgerun/devcontainer-features
 
 docs:
-    devcontainer features generate-docs -p . -n ridgerun/devcontainer-features --github-owner ridgerun --github-repo devcontainer-features --log-level debug
+    devcontainer features generate-docs -p src -n ridgerun/devcontainer-features --github-owner ridgerun --github-repo devcontainer-features --log-level debug
 
 build:
     devcontainer up
