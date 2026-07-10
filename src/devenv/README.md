@@ -11,7 +11,11 @@ Setup devcontainer to match host configurations and preferences.
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| display | The X11 display to use | string | :0 |
 
 
 

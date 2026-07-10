@@ -3,17 +3,27 @@
     "version": "0.1.0",
     "name": "Devenv",
     "description": "Setup devcontainer to match host configurations and preferences.",
+    "options": {
+        "display": {
+            "type": "string",
+            "description": "The X11 display to use",
+            "default": ":0"
+        }
+    },
     "mounts": [
         "type=bind,source=${localEnv:HOME}/.config,target=/var/run/devenv/config,readonly",
         "type=bind,source=${localEnv:HOME}/.gitconfig,target=/var/run/devenv/gitconfig,readonly",
         "type=bind,source=${localEnv:HOME}/.cache,target=/var/run/devenv/cache",
         "type=bind,source=${localEnv:HOME}/.ssh/known_hosts,target=/var/run/devenv/known_hosts,readonly",
-        "type=bind,source=${localEnv:SSH_AUTH_SOCK},target=/var/run/devenv/ssh-auth.sock"
+        "type=bind,source=${localEnv:SSH_AUTH_SOCK},target=/var/run/devenv/ssh-auth.sock",
+        "type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix",
+        "type=bind,source=${localEnv:HOME}/.Xauthority,target=/var/run/devenv/.Xauthority,readonly"
     ],
     "containerEnv": {
         "SSH_AUTH_SOCK": "/var/run/devenv/ssh-auth.sock",
         "XDG_CONFIG_HOME": "/var/run/devenv/config",
-        "XDG_CACHE_HOME": "/var/run/devenv/cache"
+        "XDG_CACHE_HOME": "/var/run/devenv/cache",
+        "XAUTHORITY": "/var/run/devenv/.Xauthority"
     },
     "postCreateCommand": "/usr/local/bin/devenv-post-create"
 }
