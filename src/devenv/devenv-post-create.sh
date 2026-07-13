@@ -16,6 +16,7 @@ link_path "$HOME/.gitconfig" /var/run/devenv/gitconfig
 link_path "$HOME/.cache" /var/run/devenv/cache
 link_path "$HOME/.ssh/known_hosts" /var/run/devenv/known_hosts
 link_path "$HOME/.Xauthority" /var/run/devenv/.Xauthority
+link_path "$HOME/.codex" /var/run/devenv/codex
 
 if [ -e /var/run/devenv/ssh-auth.sock ]; then
   sudo chmod o=rw /var/run/devenv/ssh-auth.sock
