@@ -13,7 +13,7 @@
         },
         "ghcr.io/ridgerun/devcontainer-features/ridgerun-oss:0": {},
         "ghcr.io/ridgerun/devcontainer-features/ridgerun-proprietary:0": {},
-        "./src/devenv": {
+        "ghcr.io/ridgerun/devcontainer-features/devenv:0": {
             "display": "${localEnv:DISPLAY}"
         }
     }
