@@ -2,6 +2,5 @@
     "id": "fixes",
     "version": "0.1.0",
     "name": "Local fixes",
-    "description": "Catch all local feature with fixes",
-    "postCreateCommand": "sudo chmod o=rw /ssh-auth.sock"
+    "description": "Catch all local feature with fixes"
 }

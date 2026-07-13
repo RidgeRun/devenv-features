@@ -12,43 +12,9 @@
             "gstVersion": "1.26"
         },
         "ghcr.io/ridgerun/devcontainer-features/ridgerun-oss:0": {},
-        "ghcr.io/ridgerun/devcontainer-features/ridgerun-proprietary:0": {}
-    },
-    "mounts": [
-        {
-            "source": "${localEnv:HOME}/.config",
-            "target": "/home/${localEnv:USER}/.config",
-            "type": "bind",
-            "options": ["readonly"]
-        },
-        {
-            "source": "${localEnv:HOME}/.gitconfig",
-            "target": "/home/${localEnv:USER}/.gitconfig",
-            "type": "bind",
-            "options": ["readonly"]
-        },
-        {
-            "source": "${localEnv:HOME}/.cache",
-            "target": "/home/${localEnv:USER}/.cache",
-            "type": "bind",
-            "options": []
-        },
-        {
-            "source": "${localEnv:HOME}/.ssh/known_hosts",
-            "target": "/home/${localEnv:USER}/.ssh/known_hosts",
-            "type": "bind",
-            "options": ["readonly"]
-        },
-        {
-            "source": "${localEnv:SSH_AUTH_SOCK}",
-            "target": "/ssh-auth.sock",
-            "type": "bind",
-            "options": []
+        "ghcr.io/ridgerun/devcontainer-features/ridgerun-proprietary:0": {},
+        "ghcr.io/ridgerun/devcontainer-features/devenv:0": {
+            "display": "${localEnv:DISPLAY}"
         }
-    ],
-    "remoteEnv": {
-        "SSH_AUTH_SOCK": "/ssh-auth.sock",
-        "XDG_CONFIG_HOME": "/home/${localEnv:USER}/.config",
-        "XDG_CACHE_HOME": "/home/${localEnv:USER}/.cache"
     }
 }
