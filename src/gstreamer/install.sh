@@ -44,6 +44,7 @@ apt install -yq \
   libdw-dev \
   libpython3-dev \
   libxml2-dev \
+  libsysprof-capture-4-dev \
   bash-completion \
   python3-gi \
   gobject-introspection \
