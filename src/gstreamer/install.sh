@@ -46,9 +46,12 @@ apt install -yq \
   libxml2-dev \
   libsysprof-capture-4-dev \
   bash-completion \
+  python3-pip \
   python3-gi \
   gobject-introspection \
   libgirepository1.0-dev
+
+python3 -m pip install --break-system-packages 'setuptools==68.1.2'
 
 mkdir -p /usr/src
 cd /usr/src
