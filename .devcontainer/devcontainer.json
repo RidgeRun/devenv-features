@@ -1,6 +1,6 @@
 {
     "name": "RidgeRun Devcontainer Features",
-    "image": "ubuntu:24.04",
+    "image": "nvcr.io/nvidia/deepstream:9.1-triton-sbsa-dgx-spark",
     "containerUser": "${localEnv:USER}",
     "remoteUser": "${localEnv:USER}",
     "features": {
